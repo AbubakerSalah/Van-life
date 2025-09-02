@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 export default function Header() {
   return (
     <>
-      <header className="flex justify-between m-auto max-w-7xl p-12 bg-[#FFF7ED] text-[#000]">
+      <header className="flex justify-between m-auto max-w-7xl p-12 text-[#000]">
         <Link className="font-extrabold text-4xl" to="/">
           {" "}
           #VANLIFE
