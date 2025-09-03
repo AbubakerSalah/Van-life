@@ -11,20 +11,18 @@ export default function VansDetail() {
   const [err, setErr] = useState("");
 
   useEffect(() => {
-   ( async(() => {
-    try {
-      const res = await fetch(`/api/vans/${params.id}`)
-      if (!res.ok) throw new Error("Filed to fetch vans");
+    (async () => {
+      try {
+        const res = await fetch(`/api/vans/${params.id}`);
+        if (!res.ok) throw new Error("Filed to fetch vans");
         const data = await res.json();
-      setVans(data.vans || [])
-    } catch(err) {
-      setErr(err.message || "Something went wrong");
-    } finally{
-      setloading(false)
-    }
-      
-    }))
-    
+        setVans(data.vans || []);
+      } catch (err) {
+        setErr(err.message || "Something went wrong");
+      } finally {
+        setloading(false);
+      }
+    })();
   }, [params.id]);
 
   const typeStyles = (type) => {
@@ -43,10 +41,33 @@ export default function VansDetail() {
   }
 
   if (loading) {
-    return <div>Looooooooooooool</div>;
+    return (
+      <div className="max-w-3xl m-auto mb-34">
+        <Link to="/van">
+          <div className="flex items-center mb-6 underline">
+            <span className="text-[#858585] mt-1 cursor-pointer">
+              <FaArrowLeftLong />
+            </span>
+
+            <Button className="font-semibold text-[#161616] cursor-pointer">
+              Back to all vans
+            </Button>
+          </div>
+        </Link>
+
+        <div className="aspect-[5/3] w-full rounded-xl bg-gray-100" />
+        <div className="space-y-4">
+          <div className="mt-2 h-8 w-24 rounded bg-gray-100" />
+          <div className="mt-2 h-8 w-44 rounded bg-gray-100" />
+          <div className="mt-2 h-8 w-24 rounded bg-gray-100" />
+          <div className="mt-2 h-20 w-wull rounded bg-gray-100" />
+          <div className="mt-2 h-8 w-fullrounded bg-gray-100" />
+        </div>
+      </div>
+    );
   }
   const vansDetailsEl = van ? (
-    <div className="max-w-3xl m-auto mb-34">
+    <div className="max-w-3xl m-auto mb-34 scroll-smooth">
       <Link to="/van">
         <div className="flex items-center mb-6 underline">
           <span className="text-[#858585] mt-1 cursor-pointer">
@@ -84,15 +105,14 @@ export default function VansDetail() {
         </div>
         <div>
           <p className="my-4">{van.description}</p>
+
           <Button className="bg-[#FF8C38] text-white w-full py-3 font-bold rounded cursor-pointer">
             Rent this van
           </Button>
         </div>
       </div>
     </div>
-  ) : (
-    (<h1>loading</h1>)()
-  );
+  ) : null;
 
   return <div>{vansDetailsEl}</div>;
 }

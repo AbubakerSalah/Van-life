@@ -9,7 +9,14 @@ export default function Header() {
           {" "}
           #VANLIFE
         </Link>
-        <nav className=" text-3xl space-x-8">
+        <nav className=" text-2xl space-x-8">
+        <Link
+            className="text-[#4D4D4D] hover:underline hover:text-[#000] transition-colors duration-200"
+            to="/Host"
+          >
+            {" "}
+            Host
+          </Link>
           <Link
             className="text-[#4D4D4D] hover:underline hover:text-[#000] transition-colors duration-200"
             to="/about"

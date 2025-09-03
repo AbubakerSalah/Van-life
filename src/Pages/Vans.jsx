@@ -40,16 +40,20 @@ export default function Vans() {
           {Array.from({ length: 6 }).map((_, i) => (
             <div key={i} className="rounded-2xl p-2 animate-pulse">
               <div className="aspect-[4/3] w-full rounded-xl bg-gray-100" />
-              <div className="mt-4 h-5 w-1/2 rounded bg-gray-100" />
-              <div className="mt-2 h-8 w-24 rounded bg-gray-100" />
-              <div className="mt-4 h-5 w-20 rounded bg-gray-100" />
+              <div className="flex justify-between">
+                <div>
+                  <div className="mt-4 h-5 w-1/2 rounded bg-gray-100" />
+                  <div className="mt-2 h-8 w-24 rounded bg-gray-100" />
+                </div>
+                <div className="mt-4 h-10 w-10 rounded bg-gray-100" />
+              </div>
             </div>
           ))}
         </div>
       </div>
     );
   }
- 
+
   const vanElements = vans.map((van) => (
     <article key={van.id}>
       <Link to={`/van/${van.id}`}>
@@ -88,7 +92,7 @@ export default function Vans() {
   }
 
   return (
-    <div className="max-w-7xl mx-auto px-4 mb-16">
+    <div className="max-w-7xl mx-auto px-4 mb-16 scroll-smooth">
       <h1 className="text-3xl font-bold text-center py-6">
         Explore our van options
       </h1>

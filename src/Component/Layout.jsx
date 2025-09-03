@@ -6,14 +6,16 @@ import Footer from "./Footer";
 export default function Layout() {
   return (
     <>
-      <div>
-        <Header />
+      <div className="flex flex-col min-h-screen">
+        <header>
+          <Header />
+        </header>
 
         <main>
           <Outlet />
         </main>
 
-        <footer>
+        <footer className="mt-auto">
           <Footer />
         </footer>
       </div>
