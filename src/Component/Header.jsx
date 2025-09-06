@@ -11,7 +11,7 @@ export default function Header() {
         </NavLink>
         <nav className=" text-2xl space-x-8">
           <NavLink
-            className={({isActive}) =>
+            className={({ isActive }) =>
               isActive
                 ? "text-[#4D4D4D] underline transition-colors duration-200"
                 : null
@@ -22,7 +22,7 @@ export default function Header() {
             Host
           </NavLink>
           <NavLink
-            className={({isActive}) =>
+            className={({ isActive }) =>
               isActive
                 ? "text-[#4D4D4D] underline transition-colors duration-200"
                 : null
@@ -33,7 +33,7 @@ export default function Header() {
             About
           </NavLink>
           <NavLink
-            className={({isActive}) =>
+            className={({ isActive }) =>
               isActive
                 ? "text-[#4D4D4D] underline transition-colors duration-200"
                 : null

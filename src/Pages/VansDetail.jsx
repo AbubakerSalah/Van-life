@@ -67,7 +67,7 @@ export default function VansDetail() {
     );
   }
   const vansDetailsEl = van ? (
-    <div className="max-w-3xl m-auto mb-34 scroll-smooth">
+    <div className="max-w-3xl m-auto mb-34 px-4 scroll-smooth">
       <Link to="/van">
         <div className="flex items-center mb-6 underline">
           <span className="text-[#858585] mt-1 cursor-pointer">

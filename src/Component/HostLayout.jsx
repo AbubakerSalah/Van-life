@@ -8,7 +8,7 @@ export default function HostLayout() {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "text-[#4D4D4D] underline transition-colors duration-200"
+              ? "text-[#161616] underline font-semibold transition-colors duration-200"
               : null
           }
           to="/host"
@@ -19,30 +19,30 @@ export default function HostLayout() {
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "text-[#4D4D4D] underline transition-colors duration-200"
+              ? "text-[#161616] underline font-semibold transition-colors duration-200"
               : null
           }
-          to="/host/income"
+          to="income"
         >
           Income
         </NavLink>
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "text-[#4D4D4D] underline transition-colors duration-200"
+              ? "text-[#161616] underline font-semibold transition-colors duration-200"
               : null
           }
-          to="/host/HostVan"
+          to="HostVan"
         >
           Van
         </NavLink>
         <NavLink
           className={({ isActive }) =>
             isActive
-              ? "text-[#4D4D4D] underline transition-colors duration-200"
+              ? "text-[#161616] underline font-semibold transition-colors duration-200"
               : null
           }
-          to="/host/reviews"
+          to="reviews"
         >
           Reviews
         </NavLink>
