@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Button from "../Component/Button/Button";
 import { FaArrowLeftLong } from "react-icons/fa6";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 export default function VansDetail() {
   const params = useParams();
+  const location = useLocation();
+  console.log(location);
   const [van, setVans] = useState([]);
   const [loading, setloading] = useState(true);
   const [err, setErr] = useState("");
@@ -42,7 +44,7 @@ export default function VansDetail() {
 
   if (loading) {
     return (
-      <div className="max-w-3xl m-auto mb-34">
+      <div className="max-w-3xl m-auto mb-34 px-4 scroll-smooth">
         <Link to="/van">
           <div className="flex items-center mb-6 underline">
             <span className="text-[#858585] mt-1 cursor-pointer">
@@ -55,7 +57,7 @@ export default function VansDetail() {
           </div>
         </Link>
 
-        <div className="aspect-[5/3] w-full rounded-xl bg-gray-100" />
+        <div className="aspect-[4/3] w-full rounded-xl bg-gray-100" />
         <div className="space-y-4">
           <div className="mt-2 h-8 w-24 rounded bg-gray-100" />
           <div className="mt-2 h-8 w-44 rounded bg-gray-100" />
@@ -66,16 +68,20 @@ export default function VansDetail() {
       </div>
     );
   }
+
+  const search = location.state?.search || "";
+  const type = location.state?.type || "all";
+  
   const vansDetailsEl = van ? (
     <div className="max-w-3xl m-auto mb-34 px-4 scroll-smooth">
-      <Link to="/van">
+      <Link to={`..${search}`} relative="path">
         <div className="flex items-center mb-6 underline">
           <span className="text-[#858585] mt-1 cursor-pointer">
             <FaArrowLeftLong />
           </span>
 
           <Button className="font-semibold text-[#161616] cursor-pointer">
-            Back to all vans
+            Back to {type} vans
           </Button>
         </div>
       </Link>

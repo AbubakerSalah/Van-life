@@ -44,7 +44,7 @@ export default function VanDashbord() {
   }
 
   const hostVansElement = vans.map((van) => (
-    <Link to={`/host/hostvan/${van.id}`} key={van.id}>
+    <Link to={van.id} key={van.id}>
       <div className="bg-white flex items-center gap-3 p-5 my-4 rounded-md">
         <div>
           <img

@@ -15,6 +15,7 @@ import HostVansDetailsLayout from "./Component/HostVansDetailsLayout";
 import Details from "./Pages/HOST/Details";
 import Pricing from "./Pages/HOST/Pricing";
 import Pohoto from "./Pages/HOST/Photos";
+import NotFound from "./Pages/NotFound";
 import "../server";
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
                 <Route path="photos" element={<Pohoto />} />
               </Route>
             </Route>
+            <Route path="*" element={ <NotFound />} />
           </Route>
         </Routes>
       </BrowserRouter>
