@@ -4,9 +4,8 @@ import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <div className="relative text-white">
-      {/* HERO IMAGE */}
       <img
-        src="../home.webp" // convert your PNG → WebP once and put in /public
+        src="../home.webp"
         alt="Scenic travel background for the home page"
         width={1920}
         height={1080}
@@ -16,10 +15,6 @@ export default function Home() {
         className="block w-full h-[100svh] object-cover"
       />
 
-      {/* OVERLAY */}
-      <div className="absolute inset-0 bg-black/50" />
-
-      {/* CONTENT */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 px-12 w-full max-w-5xl text-center">
         <h1 className="text-5xl font-bold">
           You got the travel plans, we got the travel vans.

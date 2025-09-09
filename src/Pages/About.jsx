@@ -5,11 +5,16 @@ export default function About() {
   return (
     <div>
       <div>
-        <img
-          className="w-full h-[388px] object-cover"
-          src="./public/about.jpeg"
-          alt="A travel van parked in nature"
-        />
+      <img
+        src="../about.webp"
+        alt="Scenic travel background for the home page"
+        width={1920}
+        height={180}
+        decoding="async"
+        loading="eager"
+        fetchPriority="high"
+        className="block w-full sm:h-[500px] object-cover"
+      />
       </div>
       <div className="max-w-7xl m-auto">
         <section className="p-12">
