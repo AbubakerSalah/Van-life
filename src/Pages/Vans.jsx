@@ -70,7 +70,7 @@ export default function Vans() {
   if (loading) {
     return (
       <div className="max-w-7xl mx-auto px-10 mb-16 scroll-smooth">
-        <h1 className="text-3xl font-bold py-8">Explore our van options</h1>
+        <h1 className="text-2xl font-extrabold py-8">Explore our van options</h1>
         <div className="flex items-center mb-12 gap-4">
           <div className="mt-2 h-10 w-22 rounded bg-gray-100" />
           <div className="mt-2 h-10 w-22 rounded bg-gray-100" />
@@ -126,7 +126,7 @@ export default function Vans() {
 
   return (
     <div className="max-w-7xl mx-auto px-10 mb-16 scroll-smooth">
-      <h1 className="text-3xl font-bold py-8">Explore our van options</h1>
+      <h1 className="text-2xl font-extrabold py-8">Explore our van options</h1>
       <div className="flex items-center gap-4 mb-12">
         {/* <button
           onClick={() => handleFilterChange("type", "simple" )}
