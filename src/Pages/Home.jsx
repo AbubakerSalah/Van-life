@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../Component/Button/Button";
+import { Link } from "react-router-dom";
 export default function Home() {
   return (
     <div
@@ -7,7 +7,7 @@ export default function Home() {
         bg-[linear-gradient(0deg,rgba(0,0,0,0.46),rgba(0,0,0,0.46)),url('../public/home.png')]
         bg-no-repeat bg-center bg-cover "
     >
-      <div className="flex flex-col gap-3 items-center">
+      <div className="flex flex-col gap-3 mt-8 items-center">
         <h1 className="text-5xl font-bold">
           You got the travel plans, we got the travel vans.
         </h1>
@@ -16,9 +16,12 @@ export default function Home() {
           perfect van to make your perfect road trip.
         </p>
 
-        <Button className="bg-[#FF8C38] w-full py-3 font-bold rounded cursor-pointer">
+        <Link
+          to="/van"
+          className="bg-[#FF8C38] text-center w-full py-3  font-bold rounded cursor-pointer"
+        >
           Find your van
-        </Button>
+        </Link>
       </div>
     </div>
   );

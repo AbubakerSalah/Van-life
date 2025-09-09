@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 export default function Header() {
   return (
     <>
-      <header className="flex justify-between m-auto max-w-7xl px-10 my-12 text-[#000]">
-        <NavLink className="font-extrabold text-4xl" to="/">
+      <header className="flex justify-between items-center m-auto max-w-7xl px-10 my-12 text-[#000]">
+        <NavLink className="font-extrabold sm:text-4xl" to="/">
           {" "}
           #VANLIFE
         </NavLink>

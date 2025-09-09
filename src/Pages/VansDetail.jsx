@@ -7,7 +7,6 @@ import { Link, useLocation } from "react-router-dom";
 export default function VansDetail() {
   const params = useParams();
   const location = useLocation();
-  console.log(location);
   const [van, setVans] = useState([]);
   const [loading, setloading] = useState(true);
   const [err, setErr] = useState("");
