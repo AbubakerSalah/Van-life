@@ -44,7 +44,7 @@ export default function Dashbord() {
   return (
     <>
       <div>
-        <div className="bg-[#FFEAD0] px-12 py-8 mt-4 space-y-4">
+        <div className="bg-[#FFEAD0] px-10 py-8 mt-4 space-y-4  scroll-smooth">
           <h1 className="text-4xl font-bold">Welcome!</h1>
           <p className="text-[#4D4D4D]">
             Income last{" "}
@@ -55,7 +55,7 @@ export default function Dashbord() {
         <div className="bg-[#FFDDB2] px-12 py-10">
           <h3 className="text-2xl font-semibold">Review score 5.0<span className="text-[#4D4D4D] font-light ">/5</span></h3>
         </div>
-        <div className="px-12">
+        <div className="px-10">
           <h4 className="text-3xl my-10 font-semibold">Your listed vans</h4>
           <div>{hostVansElement}</div>
         </div>

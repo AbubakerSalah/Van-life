@@ -65,7 +65,7 @@ export default function VanDashbord() {
   ));
   return (
     <>
-      <div className="px-12">
+      <div className="max-w-7xl mx-auto px-10 scroll-smooth">
         <h1 className="text-3xl font-semibold">Your listed vans</h1>
         <div className="my-10">{hostVansElement}</div>
       </div>

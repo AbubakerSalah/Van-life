@@ -86,7 +86,7 @@ export default function HostVanDetail() {
   ));
 
   return (
-    <div className="px-12">
+    <div className="px-10">
       <Link to=".." relative="path">
         <div className="flex items-center mb-6 underline">
           <span className="text-[#858585] mt-1 cursor-pointer">
