@@ -1,17 +1,16 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from "./Pages/About";
 import Home from "./Pages/Home";
 import Van from "./Pages/Vans";
 import Layout from "./Component/Layout";
 import VansDetail from "./Pages/vansDetail";
 import Dashbord from "./Pages/HOST/Dashbord";
-import Income from "./Pages/HOST/INCOME.JSX";
+import Income from "./Pages/Host/Income";
 import Reviews from "./Pages/HOST/Reviews";
 import HostLayout from "./Component/HostLayout";
 import HostVan from "./Pages/HOST/HostVan";
 import HostVanDetail from "./Pages/HOST/HostVanDetail";
-import HostVansDetailsLayout from "./Component/HostVansDetailsLayout";
 import Details from "./Pages/HOST/Details";
 import Pricing from "./Pages/HOST/Pricing";
 import Pohoto from "./Pages/HOST/Photos";
@@ -40,7 +39,7 @@ function App() {
                 <Route path="photos" element={<Pohoto />} />
               </Route>
             </Route>
-            <Route path="*" element={ <NotFound />} />
+            <Route path="*" element={<NotFound />} />
           </Route>
         </Routes>
       </BrowserRouter>
