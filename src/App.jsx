@@ -4,7 +4,7 @@ import About from "./Pages/About";
 import Home from "./Pages/Home";
 import Van from "./Pages/Vans";
 import Layout from "./Component/Layout";
-import VansDetail from "./Pages/vansDetail";
+import VansDetail from "./Pages/VansDetail";
 import Dashbord from "./Pages/HOST/Dashbord";
 import Income from "./Pages/Host/Income";
 import Reviews from "./Pages/HOST/Reviews";
