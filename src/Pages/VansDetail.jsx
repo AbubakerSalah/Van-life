@@ -70,7 +70,7 @@ export default function VansDetail() {
 
   const search = location.state?.search || "";
   const type = location.state?.type || "all";
-  
+
   const vansDetailsEl = van ? (
     <div className="max-w-3xl m-auto mb-34 px-4 scroll-smooth">
       <Link to={`..${search}`} relative="path">
