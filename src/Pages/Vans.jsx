@@ -45,12 +45,9 @@ export default function Vans() {
 
   const typeStyles = (type) => {
     const t = (type || "").toLowerCase();
-    if (t === "simple")
-      return "bg-[#E17654] text-[#FFEAD0] text-sm sm:text-normal";
-    if (t === "rugged")
-      return "bg-[#115E59] text-[#FFEAD0] text-sm sm:text-normal";
-    if (t === "luxury")
-      return "bg-[#161616] text-[#FFEAD0] text-sm sm:text-normal";
+    if (t === "simple") return "bg-[#E17654] text-[#FFEAD0]";
+    if (t === "rugged") return "bg-[#115E59] text-[#FFEAD0]";
+    if (t === "luxury") return "bg-[#161616] text-[#FFEAD0]";
     return idleBtn;
   };
 
