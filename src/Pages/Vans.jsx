@@ -39,15 +39,18 @@ export default function Vans() {
     });
   }
 
-  const baseBtn = "py-2 px-5 rounded";
+  const baseBtn = "py-2 px-4 sm:pyx-5 rounded";
   const idleBtn = "bg-[#FFEAD0] text-[#4D4D4D]";
   //const clearBtn = "underline text-[#4D4D4D] bg-transparent";
 
   const typeStyles = (type) => {
     const t = (type || "").toLowerCase();
-    if (t === "simple") return "bg-[#E17654] text-[#FFEAD0]";
-    if (t === "rugged") return "bg-[#115E59] text-[#FFEAD0]";
-    if (t === "luxury") return "bg-[#161616] text-[#FFEAD0]";
+    if (t === "simple")
+      return "bg-[#E17654] text-[#FFEAD0] text-sm sm:text-normal";
+    if (t === "rugged")
+      return "bg-[#115E59] text-[#FFEAD0] text-sm sm:text-normal";
+    if (t === "luxury")
+      return "bg-[#161616] text-[#FFEAD0] text-sm sm:text-normal";
     return idleBtn;
   };
 
@@ -70,7 +73,9 @@ export default function Vans() {
   if (loading) {
     return (
       <div className="max-w-7xl mx-auto px-10 mb-16 scroll-smooth">
-        <h1 className="text-2xl font-extrabold py-8">Explore our van options</h1>
+        <h1 className="text-2xl font-extrabold py-8">
+          Explore our van options
+        </h1>
         <div className="flex items-center mb-12 gap-4">
           <div className="mt-2 h-10 w-22 rounded bg-gray-100" />
           <div className="mt-2 h-10 w-22 rounded bg-gray-100" />
@@ -97,7 +102,10 @@ export default function Vans() {
 
   const vanElements = displayedVansEl.map((van) => (
     <article key={van.id}>
-      <Link to={van.id} state={{ search: `?${searchPrams.toString()}`, type: filterType}}>
+      <Link
+        to={van.id}
+        state={{ search: `?${searchPrams.toString()}`, type: filterType }}
+      >
         <img
           src={van.imageUrl}
           alt={van.name ? `${van.name} van` : "Van"}
@@ -168,7 +176,7 @@ export default function Vans() {
             onClick={() => handleFilterChange("type", null)}
             className=" text-[#4D4D4D]  underline"
           >
-            Clear filters
+            Clear
           </button>
         ) : null}
       </div>

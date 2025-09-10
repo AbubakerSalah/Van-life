@@ -9,7 +9,7 @@ export default function Pohotos() {
   const currentVanEl = currentVan.map((van) => (
     <div key={van.id}>
       <div className="font-bold mb-6">
-        <img className="w-25" src={van.imageUrl} alt="" />
+        <img className="w-25 rounded" src={van.imageUrl} alt="" />
       </div>
     </div>
   ));

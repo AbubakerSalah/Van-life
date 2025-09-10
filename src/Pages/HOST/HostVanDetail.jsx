@@ -16,7 +16,7 @@ export default function HostVanDetail() {
 
   if (!currentVan) {
     return (
-      <div className="px-12">
+      <div className="px-10 ">
         <Link to=".." relative="path">
           <div className="flex items-center mb-6 underline">
             <span className="text-[#858585] mt-1 cursor-pointer">
@@ -66,7 +66,7 @@ export default function HostVanDetail() {
     <div key={van.id}>
       <div className="flex flex-row items-center gap-3">
         <div>
-          <img className="w-40 bg-cover" src={van.imageUrl} />
+          <img className="w-40 bg-cover rounded" src={van.imageUrl} />
         </div>
         <div>
           <p
@@ -75,7 +75,7 @@ export default function HostVanDetail() {
           >
             {van.type}
           </p>
-          <h2 className="text-2xl font-bold my-3">{van.name}</h2>
+          <h2 className="text-sm sm:text-2xl font-bold my-3">{van.name}</h2>
           <p className="text-lg font-semibold leading-none">
             ${van.price}{" "}
             <span className="text-sm font-normal text-[#161616]">/day</span>

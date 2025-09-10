@@ -3,7 +3,7 @@ import Button from "../Component/Button/Button";
 
 export default function About() {
   return (
-    <div>
+    <div className="mt-8">
       <div>
       <img
         src="../about.webp"
