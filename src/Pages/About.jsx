@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "../Component/Button/Button";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -35,9 +35,11 @@ export default function About() {
           <h2 className="text-3xl font-bold">
             Your destination is waiting. Your van is ready.
           </h2>
-          <Button className="bg-[#161616] text-white py-3 px-6 mt-6 rounded-lg">
+          <div className="py-8 mt-">
+          <Link to="../van" className="bg-[#161616] text-white py-4 px-6  rounded-lg">
             Explore our vans
-          </Button>
+          </Link>
+          </div>
         </section>
       </div>
     </div>
