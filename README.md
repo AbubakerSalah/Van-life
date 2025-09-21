@@ -1,12 +1,28 @@
-# React + Vite
+# Van-Life 🚐
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Van-Life is a frontend project I built with **React** and **JavaScript**.  
+The main goal was to practice **routing with React Router** and working with data from a **mock API**.  
 
-Currently, two official plugins are available:
+It’s a routing-heavy app, with different pages for listings and details, and I tried to make the navigation feel smooth and realistic.  
+Even though it’s powered by mock data, the idea was to get as close as possible to how a real-world project would be structured.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ What it does
+- Uses **React Router** for nested and dynamic routes.
+- Fetches and displays data from a mock API.
+- Responsive design so it works nicely on both desktop and mobile.
+- Component-based structure to keep the code clean and reusable.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech I used
+- **React**  
+- **JavaScript**  
+- **React Router**  
+- **CSS / TailwindCSS** 
+- **MirageJS** (for the mock API) 
+
+---
+
+
